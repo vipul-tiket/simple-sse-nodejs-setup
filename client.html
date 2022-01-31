@@ -14,7 +14,7 @@
                 console.log(e.data);
             };
 
-            const src = new EventSource("http://localhost:5000/sse", /* { withCredentials: true } */);
+            const src = new EventSource("https://simple-sse-nodejs-setup.vercel.app:5000/sse", /* { withCredentials: true } */);
             src.onmessage = fn;
             // src1.close();
 
